@@ -8,7 +8,6 @@ public class problem3_4 {
         String str = s.next();
         char c = str.charAt(0);
 
-
         for (; c > 0x60; c--) {
             for (char j = 0x61; j <= c; j++)
                 System.out.print(j);
