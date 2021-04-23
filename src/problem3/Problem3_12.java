@@ -1,3 +1,5 @@
+package problem3;
+
 public class Problem3_12 {
     public static void main(String[] args) {
         int[] arr = new int[args.length];

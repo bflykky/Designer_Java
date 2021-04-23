@@ -1,3 +1,5 @@
+package problem3;
+
 public class problem3_10 {
     public static void main(String[] args) {
         int[][] arr = new int[4][4];
