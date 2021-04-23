@@ -1,4 +1,6 @@
-public class problem3_12 {
+//Add.java는 problem3_12번 문제의 답 소스코드 파일이다.
+
+public class Add {
     public static void main(String[] args) {
         int[] arr = new int[args.length];
         int sum = 0;
@@ -7,9 +9,9 @@ public class problem3_12 {
             try {
                 arr[i] = Integer.parseInt(args[i]);
                 sum += arr[i];
-                i++;
-            } catch (NumberFormatException e) {
-                System.out.println(args[i] + "는 정수로 변환할 수 없습니다.");
+            }
+            catch (NumberFormatException e) { }
+            finally {
                 i++;
             }
         }
