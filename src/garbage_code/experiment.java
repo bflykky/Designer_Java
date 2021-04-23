@@ -1,3 +1,5 @@
+package garbage_code;
+
 public class experiment {
     public static void main(String[] args) {
         int[] array = new int[5];
