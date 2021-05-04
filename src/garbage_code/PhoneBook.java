@@ -1,10 +1,11 @@
+package garbage_code;
 //problem4_8
 import java.util.Scanner;
 
-class Phone {
+class PhoneA {
     String name;
     String tel;
-    public Phone() {
+    public PhoneA() {
 
     }
 }
@@ -18,9 +19,9 @@ public class PhoneBook {
 
         System.out.print("인원수 >> ");
         member = s.nextInt();
-        Phone[] p = new Phone[member];
+        PhoneA[] p = new PhoneA[member];
         for ( int i = 0; i < member; i++) {
-            p[i] = new Phone();
+            p[i] = new PhoneA();
             System.out.print("이름과 전화번호(이름과 번호는 빈 칸 없이 입력) >> ");
             p[i].name = s.next();
             p[i].tel = s.next();
