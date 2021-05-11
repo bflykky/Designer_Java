@@ -1,3 +1,5 @@
+package problem4;
+
 class Rectangle {
     int x, y;
     int width, height;

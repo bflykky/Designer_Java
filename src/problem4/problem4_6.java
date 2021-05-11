@@ -1,4 +1,4 @@
-//problem4_6의 답 소스코드
+package problem4;//problem4_6의 답 소스코드
 import java.util.Scanner;
 
 class Circle {

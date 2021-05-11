@@ -1,3 +1,5 @@
+package problem4;
+
 import java.util.Scanner;
 
 class Phone {

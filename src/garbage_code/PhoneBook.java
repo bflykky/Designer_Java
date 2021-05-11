@@ -1,5 +1,5 @@
 package garbage_code;
-//problem4_8
+//problem4.problem4_8
 import java.util.Scanner;
 
 class PhoneA {
