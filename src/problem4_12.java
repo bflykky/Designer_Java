@@ -6,7 +6,13 @@ class Seat {
     static String[] seatB = {"---", "---", "---", "---", "---", "---", "---", "---", "---", "---"};
 
     static void printSeat(String[] seat) {
-        System.out.print("미정" + ">>");
+        if (seatS == seat)
+            System.out.print("S" + ">>");
+        else if (seatA == seat)
+            System.out.print("A" + ">>");
+        else
+            System.out.print("B" + ">>");
+
         for (String index : seat)
             System.out.print(" " + index);
         System.out.println();
@@ -89,12 +95,18 @@ public class problem4_12 {
             else if (inputNum == 3) {
                 System.out.print("좌석 S: 1, A: 2, B: 3 >> ");
                 inputNum = s.nextInt();
-                if (inputNum == 1)
+                if (inputNum == 1) {
+                    Seat.printSeat(Seat.seatS);
                     Seat.cancelReservation(Seat.seatS);
-                else if (inputNum == 2)
-                    Seat.cancelReservation(Seat.seatA);
-                else if (inputNum == 3)
+                }
+                else if (inputNum == 2) {
+                    Seat.printSeat(Seat.seatA);
+                Seat.cancelReservation(Seat.seatA);
+                }
+                else if (inputNum == 3) {
+                    Seat.printSeat(Seat.seatB);
                     Seat.cancelReservation(Seat.seatB);
+                }
                 else
                     System.out.println("좌석을 잘못 입력하였습니다. 처음부터 다시 시도해 주세요.");
             }
